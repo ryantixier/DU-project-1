@@ -1,0 +1,19 @@
+As a new bar owner 
+I want to create a fun and insightful web page to advertise my bar
+So that my new bar will stand out from other boosting sales and website visits
+As a new bar owner 
+I want to have a accurate history about my bar my work and spirits I will be using
+So that I can show my potential customers the history of my business 
+As a new bar owner 
+I want to be able to have a fill out of a questionnaire for prefered spirit, taste profile, and season to then match them to a list of desirable drinks
+So that potential customers will know when they walk in the door what kind of drinks they will want while also giving them many options to choose from
+As a new bar owner 
+I would like to have a action that gives viewers of my website one random drink of the listed drinks 
+So that my website will be memorible to potential site viewers boosting traffic to my new bar
+As a new bar owner 
+I want viewers to save there favorite drinks to a menu 
+So that viewers will have a higher chance of coming back to my website 
+As a new bar owner 
+I want a adivsory notice on being safe while drinking and hotlines to call 
+So that I help people who might need it while also doing due diligence. 
+As 
