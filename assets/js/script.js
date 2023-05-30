@@ -1,5 +1,3 @@
-thecocktaildb.com / api / json / v1 / 1 / search.php;
-
 $.ajax({
   url: "https://thecocktaildb.com/api/json/v1/1/search.php",
   method: "GET",
