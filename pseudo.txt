@@ -1,1 +1,46 @@
-TEST
+PSEUDOCODE 
+PSEUDOCODE 
+PSEUDOCODE 
+
+~~~
+
+HTML
+HTML
+
+Add header title
+
+BODY
+. Nav sections: logo (left) || (right) about > drink info/history, Dr. Drink's Fav's | generator > selector, surprise me | Resources | search
+. Introduction <h1> : "Welcome to Dr. Drink - How can we SERVE you :D
+. generator/selectors (modal)
+
+. "Spirits" boxes:
+... tequila
+... vodka
+... rum
+... whiskey
+... gin
+
+. flavors
+... sweet
+... spicy
+... fruity
+... dry
+
+FOOTER
+Disclaimer (left) || (Right) Resources: Addictions Treatment, Mental Health Treatment
+
+
+~~~
+
+
+CSS
+CSS
+
+
+
+~~~
+
+
+JS
+JS
