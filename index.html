@@ -43,36 +43,31 @@
         <div class="container border-end border-top border-bottom border-start d-flex" style="width:500px">
           Table Title
           <div class="row  me-auto">
-            <!-- form begin here -->
-            <div class="row-sm">
               <select
-                class="form-select"
+                class="custom-select row-sm"
                 id="formIng"
-                aria-label="Default select example"
-              >
+                aria-label="Default select example">
                 <option selected>Spirits</option>
-                <option value="1">Tequila</option>
-                <option value="2">Vodka</option>
-                <option value="3">Rum</option>
-                <option value="4">Whisky</option>
-                <option value="3">Gin</option>
-                <option value="4">Scotch</option>
-                <option value="5">Brandy</option>
-                <option value="6">Bourbon</option>
-                <option value="7">Irish Whiskey</option>
+                <option value="Tequila">Tequila</option>
+                <option value="Vodka">Vodka</option>
+                <option value="Rum">Rum</option>
+                <option value="Whiskey">Whiskey</option>
+                <option value="Gin">Gin</option>
+                <option value="Scotch">Scotch</option>
+                <option value="Brandy">Brandy</option>
+                <option value="Bourbon">Bourbon</option>
+                <option value="Irish Whiskey">Irish Whiskey</option>
               </select>
-            </div>
-            <div class="row-sm">
-              <select class="form-select" aria-label="Default select example">
+              <select class="custom-select row-sm" 
+              id="formCat"
+              aria-label="Default select example">
                 <option selected>Categories</option>
-                <option value="1">Ordinary Drink</option>
-                <option value="2">Cocktail</option>
-                <option value="3">Shot</option>
-                <option value="4">Punch/Party Drink</option>
+                <option value="Ordinary Drink">Ordinary Drink</option>
+                <option value="Cocktail">Cocktail</option>
+                <option value="Shot">Shot</option>
+                <option value="Punch/Party Drink">Punch/Party Drink</option>
               </select>
-            </div>
-              <button class="btn btn-primary" type="submit" id="form-submit">Submit</button>
-            <!-- form end here -->
+              <input type="submit" name="submit" id="form-submit">
           </div>
         </div>
       </main>
