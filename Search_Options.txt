@@ -1,0 +1,20 @@
+Categories:
+-Ordinary Drink
+-Cocktail
+-Shot
+-Punch / Party Drink
+
+Ingredients:
+-Rum
+-Gin
+-Scotch
+-Brandy
+-Bourbon
+-Tequila
+-Vodka
+-Irish Whiskey
+-Whiskey
+
+
+
+
