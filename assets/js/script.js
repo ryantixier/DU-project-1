@@ -12,6 +12,10 @@ $.ajax({
   },
 });
 
+// fetch("https://thecocktaildb.com/api/json/v1/1/search.php").then((res) =>
+//   console.log(res)
+// );
+
 // VARIABLES
 
 // FUNCTIONS
