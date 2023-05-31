@@ -13,13 +13,26 @@
 // });
 // www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 
-fetch("www.thecocktaildb.com/api/json/v1/1/list.php?c=list")
+var catRequestUrl =
+    "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=" + userCategory;
+var ingRequestUrl =
+  "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=" + userIngredient;
+
+fetch(catRequestUrl)
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
     console.log(data);
   });
+
+fetch(ingRequestUrl)
+  .then(function (response) {
+    return response.json();
+    })
+    .then(funtion(data){
+        console.log(data);
+  })
 
 // VARIABLES
 
