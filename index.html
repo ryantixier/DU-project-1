@@ -34,59 +34,61 @@
     </nav>
   </div>
   <body>
-    <main>
-      <!-- spirit selection dropdown -->
-      <div
-        class="container border-end border-top border-bottom border-start d-inline-flex"
-      >
-      <div class="container border-end border-top border-bottom border-start d-flex" style="width:500px">
-        Table Title
-        <div class="row  me-auto">
-          <!-- form begin here -->
-          <div class="row-sm">
-            <select
-              class="form-select"
-              id="formIng"
-              aria-label="Default select example"
-            >
-              <option selected>Spirits</option>
-              <option value="1">Tequila</option>
-              <option value="2">Vodka</option>
-              <option value="3">Rum</option>
-              <option value="4">Whisky</option>
-              <option value="3">Gin</option>
-              <option value="4">Scotch</option>
-              <option value="5">Brandy</option>
-              <option value="6">Bourbon</option>
-              <option value="7">Irish Whiskey</option>
-            </select>
+    <div class="d-flex justify-content-around">
+      <main>
+        <!-- spirit selection dropdown -->
+        <div
+          class="container border-end border-top border-bottom border-start d-inline-flex"
+        >
+        <div class="container border-end border-top border-bottom border-start d-flex" style="width:500px">
+          Table Title
+          <div class="row  me-auto">
+            <!-- form begin here -->
+            <div class="row-sm">
+              <select
+                class="form-select"
+                id="formIng"
+                aria-label="Default select example"
+              >
+                <option selected>Spirits</option>
+                <option value="1">Tequila</option>
+                <option value="2">Vodka</option>
+                <option value="3">Rum</option>
+                <option value="4">Whisky</option>
+                <option value="3">Gin</option>
+                <option value="4">Scotch</option>
+                <option value="5">Brandy</option>
+                <option value="6">Bourbon</option>
+                <option value="7">Irish Whiskey</option>
+              </select>
+            </div>
+            <div class="row-sm">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Categories</option>
+                <option value="1">Ordinary Drink</option>
+                <option value="2">Cocktail</option>
+                <option value="3">Shot</option>
+                <option value="4">Punch/Party Drink</option>
+              </select>
+            </div>
+              <button class="btn btn-primary" type="submit" id="form-submit">Submit</button>
+            <!-- form end here -->
           </div>
-          <div class="row-sm">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Categories</option>
-              <option value="1">Ordinary Drink</option>
-              <option value="2">Cocktail</option>
-              <option value="3">Shot</option>
-              <option value="4">Punch/Party Drink</option>
-            </select>
-          </div>
-            <button class="btn btn-primary" type="submit" id="form-submit">Submit</button>
-          <!-- form end here -->
         </div>
-      </div>
-    </main>
-
-    <div id="selection" class="col-4"></div>
-    <div>
+      </main>
+  
       <div id="selection" class="col-4"></div>
-      <div class="container border-end border-top border-bottom border-start d-inline-flex  w-25">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><h2>Drink Name</h2></li>
-          <li class="list-group-item"><h3>Ingredients</h3></li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
-        </ul>
+      <div>
+        <div id="selection" class="col-4"></div>
+        <div class="container border-end border-top border-bottom border-start d-inline-flex  w-25">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h2>Drink Name</h2></li>
+            <li class="list-group-item"><h3>Ingredients</h3></li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="assets/js/script.js"></script>
