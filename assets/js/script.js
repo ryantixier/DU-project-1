@@ -24,15 +24,13 @@ var formSubmit = document.getElementById("form-submit");
 //   });
 
 // // FUNCTIONS
-$(formSubmit).submit(function (event) {
+// get user input from submit form.
+$(formSubmit).on("click", function (event) {
   event.preventDefault();
-
   var formIngEl = $("#formIng").val();
   var formCatEl = $("#formCat").val();
-
   console.log("User Input: ", formIngEl, formCatEl);
 });
-// get user input from submit form.
 // request data from api that matches user input
 // add data to local storage
 // print data to application to show API output to user
