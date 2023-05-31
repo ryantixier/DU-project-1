@@ -1,28 +1,30 @@
 // VARIABLES
 
-var catRequestUrl =
-  "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=" + userCategory;
-var ingRequestUrl =
-  "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=" + userIngredient;
+var formSubmit = document.getElementById("form-submit");
 
-fetch(catRequestUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-  });
+// var catRequestUrl =
+//   "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=" + userCategory;
+// var ingRequestUrl =
+//   "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=" + userIngredient;
 
-fetch(ingRequestUrl)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-  });
+// fetch(catRequestUrl)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//   });
 
-// FUNCTIONS
-$("myForm").submit(function (event) {
+// fetch(ingRequestUrl)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data);
+//   });
+
+// // FUNCTIONS
+$(formSubmit).submit(function (event) {
   event.preventDefault();
 
   var formIngEl = $("#formIng").val();
