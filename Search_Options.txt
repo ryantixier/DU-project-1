@@ -5,15 +5,15 @@ Categories:
 -Punch / Party Drink
 
 Ingredients:
--Rum
--Gin
+-Rum -
+-Gin -
 -Scotch
 -Brandy
 -Bourbon
--Tequila
--Vodka
+-Tequila -
+-Vodka -
 -Irish Whiskey
--Whiskey
+-Whiskey - 
 
 
 
