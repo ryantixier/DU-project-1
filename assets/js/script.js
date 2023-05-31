@@ -1,20 +1,7 @@
-// $.ajax({
-//   url: "https://thecocktaildb.com/api/json/v1/1/search.php",
-//   method: "GET",
-//   dataType: "json",
-//   success: function (response) {
-//     // Handle the successful response here
-//     console.log(response);
-//   },
-//   error: function (xhr, status, error) {
-//     // Handle any errors that occur during the request
-//     console.log("Error:", status, error);
-//   },
-// });
-// www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+// VARIABLES
 
 var catRequestUrl =
-    "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=" + userCategory;
+  "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=" + userCategory;
 var ingRequestUrl =
   "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=" + userIngredient;
 
@@ -29,13 +16,23 @@ fetch(catRequestUrl)
 fetch(ingRequestUrl)
   .then(function (response) {
     return response.json();
-    })
-    .then(funtion(data){
-        console.log(data);
   })
-
-// VARIABLES
+  .then(function (data) {
+    console.log(data);
+  });
 
 // FUNCTIONS
+$("myForm").submit(function (event) {
+  event.preventDefault();
+
+  var formIngEl = $("#formIng").val();
+  var formCatEl = $("#formCat").val();
+
+  console.log("User Input: ", formIngEl, formCatEl);
+});
+// get user input from submit form.
+// request data from api that matches user input
+// add data to local storage
+// print data to application to show API output to user
 
 // EVENTLISTENERS
