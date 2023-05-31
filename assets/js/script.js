@@ -11,8 +11,9 @@
 //     console.log("Error:", status, error);
 //   },
 // });
+// www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 
-fetch("https://thecocktaildb.com/api/json/v1/1/search.php")
+fetch("www.thecocktaildb.com/api/json/v1/1/list.php?c=list")
   .then(function (response) {
     return response.json();
   })
