@@ -30,3 +30,11 @@ a{
     font-family: 'Quicksand', sans-serif;
     color: darkgoldenrod;
 }
+
+footer {
+    padding-top: 15px;
+    background-color: #000657;
+    border-style: solid;
+    color: #fff;
+    border-width: 1px;
+}
