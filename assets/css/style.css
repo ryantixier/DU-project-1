@@ -1,4 +1,23 @@
+.row {
 
-.navbar{
-    background-color: darkgoldenrod ;
+    background-color: #000657;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(21, 64, 114);
+    color: #fff;
+}
+
+.container {
+    border-color: rgb(21, 64, 114);
+}
+
+.card {
+    display: inline-flex;
+    flex: 1 0 200px;
+    padding: 10px;
+    background: #000657;
+    color: #fff;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
 }
