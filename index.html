@@ -5,9 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,16 +16,18 @@
 <div class="container p-3 mb-2 border-bottom">
   <!-- nav bar -->
   <nav>
-    <div class="row justify-content-between nav">
-      <div class="col-4">Dr.Drink "avatar"</div>
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <p>Dr.Drink "avatar"</p>
+      </div>
       <div class="col-4">
         <ul class="ul justify-content-between">
           <!-- links to list of spirits w icons -->
-          <a href="./history.html">History</a>
+          <a href="./history.html"><p>History</p></a>
           <!-- list of site creators' favorite drinks -->
-          <a href="dr-drinks-favs">Dr.Drinks Favs</a>
+          <a href="dr-drinks-favs"><p>Dr.Drinks Favs</p></a>
           <!-- random drink generator -->
-          <a href="try-me">Try Me</a>
+          <a href="try-me"><p>Try Me</p></a>
         </ul>
       </div>
     </div>
@@ -41,39 +40,39 @@
       <!-- spirit selection dropdown -->
       <div class="container border-end border-top border-bottom border-start d-inline-flex">
         <div class="container border-end border-top border-bottom border-start d-flex" style="width:500px">
-          Table Title
+          <h2>Table Title</h2>
           <div class="row me-auto">
               <select
                 class="custom-select row-sm"
                 id="formSpi"
                 aria-label="Default select example">
-                <option selected>Spirits</option>
-                <option value="Tequila">Tequila</option>
-                <option value="Vodka">Vodka</option>
-                <option value="Rum">Rum</option>
-                <option value="Whiskey">Whiskey</option>
-                <option value="Gin">Gin</option>
-                <option value="Scotch">Scotch</option>
-                <option value="Brandy">Brandy</option>
-                <option value="Bourbon">Bourbon</option>
-                <option value="Irish Whiskey">Irish Whiskey</option>
+                <option selected><h3>Spirits</h3></option>
+                <option value="Tequila"><p>Tequila</p></option>
+                <option value="Vodka"><p>Vodka</p></option>
+                <option value="Rum"><p>Rum</p></option>
+                <option value="Whiskey"><p>Whiskey</p></option>
+                <option value="Gin"><p>Gin</p></option>
+                <option value="Scotch"><p>Scotch</p></option>
+                <option value="Brandy"><p>Brandy</p></option>
+                <option value="Bourbon"><p>Bourbon</p></option>
+                <option value="Irish Whiskey"><p>Irish Whiskey</p></option>
               </select>
+              <input type="submit" name="submit" id="form-submit-spi">
               <select class="custom-select row-sm" 
               id="formCat"
               aria-label="Default select example">
-                <option selected>Categories</option>
-                <option value="Ordinary Drink">Ordinary Drink</option>
-                <option value="Cocktail">Cocktail</option>
-                <option value="Shot">Shot</option>
-                <option value="Punch/Party Drink">Punch/Party Drink</option>
+                <option selected><h2>Categories</h2></option>
+                <option value="Ordinary Drink"><p>Ordinary Drink</p></option>
+                <option value="Cocktail"><p>Cocktail</p></option>
+                <option value="Shot"><p>Shot</p></option>
+                <option value="Punch/Party Drink"><p>Punch/Party Drink</p></option>
               </select>
               <input type="submit" name="submit" id="form-submit-cat">
-
           </div>
         </div>
     </main>
 
-    <div id="selection" class="col-4"></div>
+    <!-- <div id="selection" class="col-4"></div> -->
     <div>
       <div id="selection" class="col-4"></div>
       <div class="container border-end border-top border-bottom border-start d-inline-flex  w-25">
@@ -84,9 +83,9 @@
           <li class="list-group-item">
             <h3>Ingredients</h3>
           </li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
+          <li class="list-group-item"><p>A third item</p></li>
+          <li class="list-group-item"><p>A fourth item</p></li>
+          <li class="list-group-item"><p>And a fifth one</p></li>
         </ul>
       </div>
     </div>
@@ -99,7 +98,19 @@
     </div>
   </footer>
   <script src="assets/js/script.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+
+</body>
+<footer>
+  <div class="d-flex">
+    <p>Dr. Drink always reccomends being responsible when consuming alcohol.</p>
+    <a href="https://alcoholawareness.org/"><p>Alcohol Awareness</p></a>
+    <a href="https://afsp.org/"><p>Suicide Prevention</p></a>
+  </div>
+</footer>
+
+
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
