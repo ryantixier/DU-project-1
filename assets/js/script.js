@@ -1,6 +1,7 @@
 // VARIABLES
 
-var formSubmit = document.getElementById("form-submit");
+var formSubmitSpi = document.getElementById("form-submit-spi");
+var formSubmitCat = document.getElementById("form-submit-cat");
 
 // var catRequestUrl =
 //   "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=" + userCategory;
@@ -25,11 +26,15 @@ var formSubmit = document.getElementById("form-submit");
 
 // // FUNCTIONS
 // get user input from submit form.
-$(formSubmit).on("click", function (event) {
+$(formSubmitSpi).on("click", function (event) {
   event.preventDefault();
-  var formIngEl = $("#formIng").val();
+  var formSpiEl = $("#formSpi").val();
+  console.log("User Input: ", formSpiEl);
+});
+$(formSubmitCat).on("click", function (event) {
+  event.preventDefault();
   var formCatEl = $("#formCat").val();
-  console.log("User Input: ", formIngEl, formCatEl);
+  console.log("User Input: ", formCatEl);
 });
 // request data from api that matches user input
 // add data to local storage
