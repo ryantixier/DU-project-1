@@ -37,4 +37,7 @@ footer {
     border-style: solid;
     color: #fff;
     border-width: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
