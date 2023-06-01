@@ -21,3 +21,12 @@
     border-style: solid;
     border-width: 1px;
 }
+
+a{
+    color: darkgoldenrod;
+}
+
+.nav{
+    font-family: 'Quicksand', sans-serif;
+    color: darkgoldenrod;
+}
