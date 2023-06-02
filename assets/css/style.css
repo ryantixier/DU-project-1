@@ -5,6 +5,7 @@
     border-width: 1px;
     border-color: rgb(21, 64, 114);
     color: #fff;
+    font-family: 'Quicksand', sans-serif
 }
 
 .container {
@@ -41,4 +42,8 @@ footer {
     position: absolute;
     bottom: 0;
     font-family: 'Quicksand', sans-serif;
+}
+
+.font{
+    font-family:'Quicksand', sans-serif;
 }
