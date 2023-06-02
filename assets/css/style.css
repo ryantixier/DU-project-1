@@ -39,7 +39,7 @@ footer {
     color: #fff;
     border-width: 1px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font-family: 'Quicksand', sans-serif;
 }
