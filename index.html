@@ -44,7 +44,7 @@
       <!-- spirit selection dropdown -->
       <div class="container  d-inline-flex">
         <div class="container border-end border-top border-bottom border-start d-flex" style="width:500px">
-          <h3>Selections</h3>
+          <h3 class="row">Selections</h3>
           <div class="row me-auto">
               <select
                 class="custom-select row-sm "
@@ -74,16 +74,19 @@
               <input type="submit" name="submit" id="form-submit-cat">
           </div>
         </div>
-        <div class="cocktail-container"></div>
+        <div class="cocktail-container">
+        <ul class="cocktailList">
+        </ul>
+        </div>
     </main>
 
     <!-- <div id="selection" class="col-4"></div> -->
-    <div class="border">
+    <div class="border font">
       <div id="selection" class="col-4"></div>
       <div class="container d-inline-flex  w-25">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <h2>Drink Name</h2>
+            <h2 class="row">Drink Name</h2>
           </li>
           <li class="list-group-item">
             <h3>Ingredients</h3>
