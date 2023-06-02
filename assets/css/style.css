@@ -33,11 +33,11 @@ a{
 }
 
 footer {
-    padding-top: 15px;
     background-color: #000657;
     border-style: solid;
     color: #fff;
     border-width: 1px;
+    height: 50px;
     width: 100%;
     position: fixed;
     bottom: 0;
