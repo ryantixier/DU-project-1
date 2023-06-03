@@ -85,6 +85,7 @@ const formSubmitSpi = document.getElementById("form-submit-spi");
 const formSubmitCat = document.getElementById("form-submit-cat");
 const cocktailContainer = document.querySelector(".cocktail-container");
 const cocktailList = document.querySelector(".cocktailList");
+// const textContentProp = "textContent";
 
 // FUNCTIONS
 function fetchDrinks(requestUrl) {
@@ -110,6 +111,7 @@ function handleFormSubmit(event, formEl, queryParam) {
     .then((drinks) => {
       drinks.forEach((drink) => {
         createDrinkElement(drink.strDrink);
+        console.log(drinks);
       });
     })
     .catch((error) => {
@@ -117,10 +119,18 @@ function handleFormSubmit(event, formEl, queryParam) {
     });
 }
 
-function handleDrinkClick() {
+function displayDrinkDetails(e) {
   console.log("Clicked");
+  for (i = 0; i < cocktailList.children.length; i++) {
+    const drinkNmPrinted = Object.assign(
+      {}(cocktailList.children[i].textContent)
+    );
+    console.log(drinkNmPrinted);
+    // const drinkName = document.querySelector(`liClass.textContent`);
+    // console.log(drinkName);
+    // console.log(drinkName.textContent);
+  }
 }
-
 // EVENT LISTENERS
 $(formSubmitSpi).on("click", function (event) {
   handleFormSubmit(event, $("#formSpi"), "i");
@@ -132,6 +142,6 @@ $(formSubmitCat).on("click", function (event) {
 
 cocktailList.addEventListener("click", function (event) {
   if (event.target.matches("li")) {
-    handleDrinkClick();
+    displayDrinkDetails();
   }
 });
