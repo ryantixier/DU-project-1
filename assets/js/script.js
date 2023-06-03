@@ -94,6 +94,15 @@ function fetchDrinks(requestUrl) {
     .then((data) => data.drinks);
 }
 
+function fetchDrinkDetails(requestUrl) {
+  return fetch(requestUrl)
+    .then((response) => response.json())
+    .then(function (data) {
+      console.log(data);
+      // .then((data) => data.drinks);
+    });
+}
+
 function createDrinkElement(drinkName) {
   const liEl = document.createElement("li");
   liEl.textContent = drinkName;
@@ -111,7 +120,7 @@ function handleFormSubmit(event, formEl, queryParam) {
     .then((drinks) => {
       drinks.forEach((drink) => {
         createDrinkElement(drink.strDrink);
-        console.log(drinks);
+        // console.log(drinks);
       });
     })
     .catch((error) => {
@@ -119,17 +128,27 @@ function handleFormSubmit(event, formEl, queryParam) {
     });
 }
 
-function displayDrinkDetails(e) {
-  console.log("Clicked");
-  for (i = 0; i < cocktailList.children.length; i++) {
-    const drinkNmPrinted = Object.assign(
-      {}(cocktailList.children[i].textContent)
-    );
-    console.log(drinkNmPrinted);
-    // const drinkName = document.querySelector(`liClass.textContent`);
-    // console.log(drinkName);
-    // console.log(drinkName.textContent);
-  }
+// function createDrinkDetailsEl(drinkDetails) {
+// create your drink detail elements here
+// }
+
+function displayDrinkDetails(event) {
+  const clickedDrink = event.target.textContent;
+  // console.log(clickedDrink);
+  const drinkSearch = clickedDrink.split(" ").join("_");
+  console.log(drinkSearch);
+  const requestUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkSearch}`;
+
+  fetchDrinkDetails(requestUrl);
+  // figure out what you need to put here
+  // .then((drinkDetails) => {
+  //   drinkDetails.forEach((drink) => {
+  //     createDrinkDetailsEl(drink.strDrink);
+  //   });
+  // })
+  // .catch((error) => {
+  //   console.error("Error fetching drink details:", error);
+  // });
 }
 // EVENT LISTENERS
 $(formSubmitSpi).on("click", function (event) {
@@ -140,8 +159,10 @@ $(formSubmitCat).on("click", function (event) {
   handleFormSubmit(event, $("#formCat"), "c");
 });
 
-cocktailList.addEventListener("click", function (event) {
-  if (event.target.matches("li")) {
-    displayDrinkDetails();
-  }
-});
+cocktailList.addEventListener("click", displayDrinkDetails);
+
+// cocktailList.addEventListener("click", function (event) {
+//   if (event.target.matches("li")) {
+//     displayDrinkDetails();
+//   }
+// });
