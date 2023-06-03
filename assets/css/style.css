@@ -23,11 +23,11 @@
     border-width: 1px;
 }
 
-a{
+a {
     color: darkgoldenrod;
 }
 
-.nav{
+.nav {
     font-family: 'Quicksand', sans-serif;
     color: darkgoldenrod;
 }
@@ -44,6 +44,42 @@ footer {
     font-family: 'Quicksand', sans-serif;
 }
 
-.font{
-    font-family:'Quicksand', sans-serif;
+.Whiskey-Heading {
+    text-align: center;
+}
+
+.Whiskey-Paragraph {
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 1.6;
+    font-size: large;
+
+}
+
+.Vodka-Heading {
+    text-align: center;
+}
+
+.Vodka-Paragraph {
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 1.6;
+    font-size: large;
+
+}
+
+.Gin-Heading {
+    text-align: center;
+}
+
+.Gin-Paragraph {
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 1.6;
+    font-size: large;
+
+}
+
+.font {
+    font-family: 'Quicksand', sans-serif;
 }
