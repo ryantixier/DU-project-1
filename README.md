@@ -5,7 +5,7 @@
 The aim of the project was to create an interactive website that serves as an advertisment for a newly-opened bar. This application contains a variety of fun, interactive features:
 <br>
 </br>
-(1) A 'custom drink recommender' that will produce a list of drink options based on two user inputs: spirit type, and drink type.
+(1) A customizable 'drink recommender' that will produce a list of drink options based on two user inputs: spirit type, and drink type.
 </br>
 <br>
 (2) A 'random drink generator' that will provide the recipe of a randomly-selected drink, for those users who feel a little on the indecisive side while visiting the site.
@@ -35,11 +35,11 @@ N/A
 
 ## Usage
 
-Below details the functionality and instructions for use of the features mentioned above.
+The information below details the functionality and instructions for use of the features mentioned above.
 
 ### Custom Drink Recommender
 
-On the home page, the user is presented with the central platform of Dr. Drink: the drink recommender. Users will select a spirit and/or type of drink they would like to make from a dropdown of options; based on these user inputs, a clickable list of drink recommendations is generated in the center of the page, displaying the names of various drink options. Upon selection of one of these options, the drink name, ingredients, and directions on how to make the selected drink will appear on the right side of the screen.
+On the home page, the user is presented with the central platform of Dr. Drink: the drink recommender. Users will select a spirit and/or type of drink they would like to make from a dropdown of options; based on these user inputs, a clickable list of drink recommendations is generated in the center of the page, displaying the names of various drink options. Upon selection of one of these options, the drink name, ingredients, and directions on how to make the selected drink will appear on the right side of the page.
 
 ### Random Drink Generator
 
@@ -57,7 +57,7 @@ This section displays options to select from the spirits featured on the website
 
 The Dr. Drink site features two mental health/substance resources at the footer of the page. Upon click, the first link will direct the user to a site with information on how to receive treatment for alcohol addiction; the second link will direct the user to the suicide hotline site.
 
-### Snapshot:
+### Preview:
 
 ![Screenshots of the Dr. Drink Application](insert file path in parentheses for screenshots of website, to be displayed in README)
 
@@ -70,25 +70,33 @@ The Dr. Drink site features two mental health/substance resources at the footer 
 
 The following contributors assisted in the development of the Dr. Drink website...
 
-#### Benjamin Connolly
+#### <u>Benjamin Connolly</u>
 
-GH:
+GH: https://github.com/B-connolly1088
 
-#### Geofferey Cuba
+#### <u>Geofferey Cuba</u>
 
-GH:
+GH: https://github.com/geoffreycuba
 
-#### Katherine Rodriquez
+#### <u>Katherine Rodriquez</u>
 
-GH:
+GH: https://github.com/katrod69
 
-#### Andrick Siegmund
+#### <u>Andrick Siegmund</u>
 
-GH:
+GH: https://github.com/Paulsig007
 
-#### Ryan Tixier
+#### <u>Ryan Tixier</u>
 
-GH:
+GH: https://github.com/ryantixier
+
+#### <u>Other Contributors:</u>
+
+Benjamin Machock
+
+Casey Miller
+
+Justin Moore
 
 ### Utlilized Web API's...
 
