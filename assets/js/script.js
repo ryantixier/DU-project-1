@@ -41,9 +41,54 @@ function fetchDrinkDetails(requestUrl) {
     .then((data) => data.drinks[0]);
 }
 
-// function createDrinkDetail() {
-// create your drink detail elements here
+// function createDrinkDetailEl(drinkDetail, className) {
+//   const liEl = document.createElement("li");
+//   const className = " ";
+//   const drinkDetailEl = document.querySelector(className);
+//   liEl.textContent = drinkDetail;
+//   liEl.classList.add("list-group-item");
+//   drinkDetailEl.append(liEl);
 // }
+
+function createDrinkDetailName(drinkName) {
+  const drinkNameEl = document.querySelector(".drinkName");
+  drinkNameEl.innerHTML = "";
+  const liEl = document.createElement("li");
+  liEl.textContent = drinkName;
+  liEl.classList.add("list-group-item");
+  drinkNameEl.append(liEl);
+}
+
+function createDrinkDetailIng(drinkIng) {
+  console.log(drinkIng);
+  const drinkIngEl = document.querySelector(".drinkIng");
+  drinkIngEl.innerHTML = "";
+  for (var i = 0; i < drinkIng.length; i++) {
+    var ingredient = drinkIng[i];
+    const liEl = document.createElement("li");
+    liEl.textContent = ingredient;
+    liEl.classList.add("list-group-item");
+    drinkIngEl.append(liEl);
+  }
+}
+
+function createDrinkDetailGlass(drinkGlass) {
+  const drinkGlassEl = document.querySelector(".drinkGlass");
+  drinkGlassEl.innerHTML = "";
+  const liEl = document.createElement("li");
+  liEl.textContent = drinkGlass;
+  liEl.classList.add("list-group-item");
+  drinkGlassEl.append(liEl);
+}
+
+function createDrinkDetailInst(drinkInst) {
+  const drinkInstEl = document.querySelector(".drinkInst");
+  drinkInstEl.innerHTML = "";
+  const liEl = document.createElement("li");
+  liEl.textContent = drinkInst;
+  liEl.classList.add("list-group-item");
+  drinkInstEl.append(liEl);
+}
 
 function displayDrinkDetails(event) {
   const clickedDrink = event.target.textContent;
@@ -54,10 +99,10 @@ function displayDrinkDetails(event) {
 
   fetchDrinkDetails(requestUrl)
     .then((drink) => {
-      // createDrinkDetail(drink.strDrink);
-      // createDrinkDetail(drink.strGlass);
-      // createDrinkDetail(getDrinkIngredients(drink));
-      // createDrinkDetail(drink.strInstructions);
+      createDrinkDetailName(drink.strDrink);
+      createDrinkDetailIng(getDrinkIngredients(drink));
+      createDrinkDetailGlass(drink.strGlass);
+      createDrinkDetailInst(drink.strInstructions);
       console.log(
         drink.strDrink,
         drink.strGlass,
