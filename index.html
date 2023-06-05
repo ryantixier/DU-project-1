@@ -19,8 +19,8 @@
 <div class="container-fluid p-3 mb-2 ">
   <!-- nav bar -->
   <nav>
-    <div class="row justify-content-between nav shadow-sm">
-      <div class="col-4">
+    <div class="row rounded justify-content-between nav shadow-lg bg-gradient">
+      <div class="col-4 text-warning">
         <p>Dr.Drink "avatar"</p>
         <img src="./assets/images/pngegg.png" alt="dr-drink-avatar" width="50px" height="50px">
       </div>
@@ -38,16 +38,16 @@
   </nav>
 </div>
 
-<body>
+<body style="background-color:#000814;">
   <div class="d-flex justify-content-around">
     <main>
       <!-- spirit selection dropdown -->
       <div class="container  d-inline-flex">
         <div class="container  d-flex flex-wrap" style="width:400px">
-          <h3 class="row " style="padding: 3px; border-radius: 10px;">Selections</h3>
+          <h3 class="row rounded bg-gradient">Selections</h3>
           <div class="row me-auto">
               <select
-                class="custom-select row-sm "
+                class="custom-select row-sm rounded bg-transparent text-light "
                 id="formSpi"
                 aria-label="Default select example">
                 <option selected><h3>Spirits</h3></option>
@@ -61,8 +61,8 @@
                 <option value="Bourbon"><p>Bourbon</p></option>
                 <option value="Irish Whiskey"><p>Irish Whiskey</p></option>
               </select>
-              <input type="submit" name="submit" id="form-submit-spi">
-              <select class="custom-select row-sm" 
+              <input type="submit" name="submit" id="form-submit-spi" class="bg-transparent text-warning">
+              <select class="custom-select row-sm bg-transparent text-light" 
               id="formCat"
               aria-label="Default select example">
                 <option selected><h2>Categories</h2></option>
@@ -71,12 +71,12 @@
                 <option value="Shot"><p>Shot</p></option>
                 <option value="Punch/Party Drink"><p>Punch/Party Drink</p></option>
               </select>
-              <input type="submit" name="submit" id="form-submit-cat">
+              <input type="submit" name="submit" id="form-submit-cat" class="bg-transparent text-warning">
             </div>
           </div>
         </main>
-        <section class="row" style="width: 50%; border-radius: 10px; margin-left: 0px;">
-          <div class="cocktail-container col-12" style="border-radius: 10%;">
+        <section class="row rounded" style="width: 50%; margin-right: 20px; margin-left: 0px;">
+          <div class="cocktail-container col-12">
             <ul class="cocktailList">
             </ul>
           </div>
@@ -122,7 +122,7 @@
     </div>
   </div>
   <footer>
-    <div class="d-flex p-4 justify-content-evenly ">
+    <div class="d-flex p-4 justify-content-evenly rounded">
       <p>Dr. Drink always reccomends being responsible when consuming alcohol.</p>
       <a href="https://alcoholawareness.org/">Alcohol Awareness</a>
       <a href="https://afsp.org/">Suicide Prevention</a>
