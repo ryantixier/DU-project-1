@@ -74,7 +74,7 @@ The following contributors assisted in the development of the Dr. Drink website.
 
 GH: https://github.com/B-connolly1088
 
-#### <u>Geofferey Cuba</u>
+#### <u>Geoffrey Cuba</u>
 
 GH: https://github.com/geoffreycuba
 
