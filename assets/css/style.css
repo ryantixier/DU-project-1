@@ -24,12 +24,12 @@
 }
 
 a {
-    color:#edb412;
+    color: #edb412;
 }
 
 .nav {
     font-family: 'Quicksand', sans-serif;
-    
+
 }
 
 footer {
@@ -73,6 +73,30 @@ footer {
 }
 
 .Gin-Paragraph {
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 1.6;
+    font-size: large;
+
+}
+
+.Tequila-Heading {
+    text-align: center;
+}
+
+.Tequila-Paragraph {
+    padding: 0.5em;
+    margin: 0.5em;
+    line-height: 1.6;
+    font-size: large;
+
+}
+
+.Rum-Heading {
+    text-align: center;
+}
+
+.Rum-Paragraph {
     padding: 0.5em;
     margin: 0.5em;
     line-height: 1.6;
