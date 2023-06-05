@@ -57,10 +57,12 @@ function createDrinkDetailName(drinkName) {
   liEl.textContent = drinkName;
   liEl.classList.add("list-group-item");
   drinkNameEl.append(liEl);
+  localStorage.setItem("savedDrinkName", drinkName);
+  // console.log(drinkName);
 }
 
 function createDrinkDetailIng(drinkIng) {
-  console.log(drinkIng);
+  // console.log(drinkIng);
   const drinkIngEl = document.querySelector(".drinkIng");
   drinkIngEl.innerHTML = "";
   for (var i = 0; i < drinkIng.length; i++) {
@@ -69,6 +71,8 @@ function createDrinkDetailIng(drinkIng) {
     liEl.textContent = ingredient;
     liEl.classList.add("list-group-item");
     drinkIngEl.append(liEl);
+    localStorage.setItem("savedDrinkIng", drinkIng);
+    // console.log(drinkIng);
   }
 }
 
@@ -79,6 +83,8 @@ function createDrinkDetailGlass(drinkGlass) {
   liEl.textContent = drinkGlass;
   liEl.classList.add("list-group-item");
   drinkGlassEl.append(liEl);
+  localStorage.setItem("savedDrinkGlass", drinkGlass);
+  // console.log(drinkGlass);
 }
 
 function createDrinkDetailInst(drinkInst) {
@@ -88,13 +94,14 @@ function createDrinkDetailInst(drinkInst) {
   liEl.textContent = drinkInst;
   liEl.classList.add("list-group-item");
   drinkInstEl.append(liEl);
+  localStorage.setItem("savedDrinkInst", drinkInst);
 }
 
 function displayDrinkDetails(event) {
   const clickedDrink = event.target.textContent;
   // console.log(clickedDrink);
   const drinkSearch = clickedDrink.split(" ").join("_");
-  console.log(drinkSearch);
+  // console.log(drinkSearch);
   const requestUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkSearch}`;
 
   fetchDrinkDetails(requestUrl)
@@ -103,12 +110,12 @@ function displayDrinkDetails(event) {
       createDrinkDetailIng(getDrinkIngredients(drink));
       createDrinkDetailGlass(drink.strGlass);
       createDrinkDetailInst(drink.strInstructions);
-      console.log(
-        drink.strDrink,
-        drink.strGlass,
-        getDrinkIngredients(drink),
-        drink.strInstructions
-      );
+      // console.log(
+      //   drink.strDrink,
+      //   drink.strGlass,
+      //   getDrinkIngredients(drink),
+      //   drink.strInstructions
+      // );
     })
     .catch((error) => {
       console.error("Error fetching drink details:", error);
