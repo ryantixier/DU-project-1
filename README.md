@@ -14,14 +14,14 @@ The aim of the project was to create an interactive website that serves as an ad
 (3) A 'save' feature that will allow the user to easily revisit past drink recipes they have liked.
 </br>
 <br>
-(4) A 'history' section that details the backstories of the spirits available on the site; this section also allows the user to see more information about the bar's creation.
+(4) A 'history' section that details the backstories of the spirits available on the site.
 </br>
 <br>
 (5) Finally, an advisory section that provides links to helpful mental health resources related to crisis intervention, as well as treatment of substance dependence and abuse; we want our users to drink safely and responsibly!
 </br>
 
 <br>
-Website: <Insert website link here>
+Website: https://ryantixier.github.io/Dr-Drink/
 </br>
 <br>
 </br>
@@ -51,7 +51,7 @@ Whether it be randomly generated or custom detailed, the user has the option to 
 
 ### History
 
-This section displays options to select from the spirits featured on the website; selecting one of the thumbnails will provide a brief, historical synopsis of the chosen spirit. Additionally, there is a thumbnail labelled "About the Bar"; clicking this section will display a summary of the history of the bar itself.
+This section displays options to select from the spirits featured on the website; selecting one of the thumbnails will provide a brief, historical synopsis of the chosen spirit.
 
 ### Advisory
 
@@ -59,7 +59,7 @@ The Dr. Drink site features two mental health/substance resources at the footer 
 
 ### Preview:
 
-![Screenshots of the Dr. Drink Application](insert file path in parentheses for screenshots of website, to be displayed in README)
+![Screenshots of the Dr. Drink Application](./assets/images/Screenshot%202023-06-05%20at%209.18.53%20PM.png)
 
 <br>
 </br>
@@ -100,7 +100,7 @@ Justin Moore
 
 ### Utlilized Web API's...
 
-...
+https://www.thecocktaildb.com/api.php
 <br>
 </br>
 
