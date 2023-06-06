@@ -112,7 +112,6 @@ function displayDrinkDetails(event) {
   var liEl = document.createElement("li");
   lastDrinkEl.innerHTML = lastDrink;
   liEl.classList.add("liClass");
-  cocktailList.append(lastDrink);
 }
 
 function getDrinkIngredients(drink) {
