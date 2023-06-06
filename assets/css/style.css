@@ -1,109 +1,104 @@
 .row {
-
-    background-color: #000657;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(21, 64, 114);
-    color: #fff;
-    font-family: 'Quicksand', sans-serif
+  background-color: #000657;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(21, 64, 114);
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
 }
 
 .container {
-    border-color: rgb(21, 64, 114);
+  border-color: rgb(21, 64, 114);
 }
 
 .card {
-    display: inline-flex;
-    flex: 1 0 200px;
-    padding: 10px;
-    background: #000657;
-    color: #fff;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+  display: inline-flex;
+  flex: 1 0 200px;
+  padding: 10px;
+  background: #000657;
+  color: #fff;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
 }
 
 a {
-    color: #edb412;
+  color: #edb412;
 }
 
 .nav {
-    font-family: 'Quicksand', sans-serif;
-
+  font-family: "Quicksand", sans-serif;
 }
 
 footer {
-    background-color: #000657;
-    border-style: solid;
-    color: #fff;
-    border-width: 1px;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    font-family: 'Quicksand', sans-serif;
+  background-color: #000657;
+  border-style: solid;
+  color: #fff;
+  border-width: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 40px;
+  width: 100%;
+  position: relative;
+  font-family: "Quicksand", sans-serif;
 }
 
 .Whiskey-Heading {
-    text-align: center;
+  text-align: center;
 }
 
 .Whiskey-Paragraph {
-    padding: 0.5em;
-    margin: 0.5em;
-    line-height: 1.6;
-    font-size: large;
-
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.6;
+  font-size: large;
 }
 
 .Vodka-Heading {
-    text-align: center;
+  text-align: center;
 }
 
 .Vodka-Paragraph {
-    padding: 0.5em;
-    margin: 0.5em;
-    line-height: 1.6;
-    font-size: large;
-
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.6;
+  font-size: large;
 }
 
 .Gin-Heading {
-    text-align: center;
+  text-align: center;
 }
 
 .Gin-Paragraph {
-    padding: 0.5em;
-    margin: 0.5em;
-    line-height: 1.6;
-    font-size: large;
-
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.6;
+  font-size: large;
 }
 
 .Tequila-Heading {
-    text-align: center;
+  text-align: center;
 }
 
 .Tequila-Paragraph {
-    padding: 0.5em;
-    margin: 0.5em;
-    line-height: 1.6;
-    font-size: large;
-
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.6;
+  font-size: large;
 }
 
 .Rum-Heading {
-    text-align: center;
+  text-align: center;
 }
 
 .Rum-Paragraph {
-    padding: 0.5em;
-    margin: 0.5em;
-    line-height: 1.6;
-    font-size: large;
-
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.6;
+  font-size: large;
 }
 
 .font {
-    font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
