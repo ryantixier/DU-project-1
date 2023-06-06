@@ -3,6 +3,7 @@ const formSubmitSpi = document.getElementById("form-submit-spi");
 const formSubmitCat = document.getElementById("form-submit-cat");
 const cocktailContainer = document.querySelector(".cocktail-container");
 const cocktailList = document.querySelector(".cocktailList");
+const lastDrinkNameEl = document.querySelector(".lastDrink");
 
 // FUNCTIONS
 function fetchDrinks(requestUrl) {
@@ -41,15 +42,6 @@ function fetchDrinkDetails(requestUrl) {
     .then((data) => data.drinks[0]);
 }
 
-// function createDrinkDetailEl(drinkDetail, className) {
-//   const liEl = document.createElement("li");
-//   const className = " ";
-//   const drinkDetailEl = document.querySelector(className);
-//   liEl.textContent = drinkDetail;
-//   liEl.classList.add("list-group-item");
-//   drinkDetailEl.append(liEl);
-// }
-
 function createDrinkDetailName(drinkName) {
   const drinkNameEl = document.querySelector(".drinkName");
   drinkNameEl.innerHTML = "";
@@ -57,7 +49,7 @@ function createDrinkDetailName(drinkName) {
   liEl.textContent = drinkName;
   liEl.classList.add("list-group-item");
   drinkNameEl.append(liEl);
-  localStorage.setItem("savedDrinkName", drinkName);
+  localStorage.setItem("savedDrinkName", JSON.stringify(drinkName));
   // console.log(drinkName);
 }
 
@@ -71,7 +63,7 @@ function createDrinkDetailIng(drinkIng) {
     liEl.textContent = ingredient;
     liEl.classList.add("list-group-item");
     drinkIngEl.append(liEl);
-    localStorage.setItem("savedDrinkIng", drinkIng);
+    localStorage.setItem("savedDrinkIng", JSON.stringify(drinkIng));
     // console.log(drinkIng);
   }
 }
@@ -83,7 +75,7 @@ function createDrinkDetailGlass(drinkGlass) {
   liEl.textContent = drinkGlass;
   liEl.classList.add("list-group-item");
   drinkGlassEl.append(liEl);
-  localStorage.setItem("savedDrinkGlass", drinkGlass);
+  localStorage.setItem("savedDrinkGlass", JSON.stringify(drinkGlass));
   // console.log(drinkGlass);
 }
 
@@ -94,7 +86,7 @@ function createDrinkDetailInst(drinkInst) {
   liEl.textContent = drinkInst;
   liEl.classList.add("list-group-item");
   drinkInstEl.append(liEl);
-  localStorage.setItem("savedDrinkInst", drinkInst);
+  localStorage.setItem("savedDrinkInst", JSON.stringify(drinkInst));
 }
 
 function displayDrinkDetails(event) {
@@ -110,16 +102,17 @@ function displayDrinkDetails(event) {
       createDrinkDetailIng(getDrinkIngredients(drink));
       createDrinkDetailGlass(drink.strGlass);
       createDrinkDetailInst(drink.strInstructions);
-      // console.log(
-      //   drink.strDrink,
-      //   drink.strGlass,
-      //   getDrinkIngredients(drink),
-      //   drink.strInstructions
-      // );
     })
     .catch((error) => {
       console.error("Error fetching drink details:", error);
     });
+
+  var lastDrinkEl = document.querySelector(".lastDrink");
+  var lastDrink = JSON.parse(localStorage.getItem("savedDrinkName"));
+  var liEl = document.createElement("li");
+  lastDrinkEl.innerHTML = lastDrink;
+  liEl.classList.add("liClass");
+  cocktailList.append(lastDrink);
 }
 
 function getDrinkIngredients(drink) {
@@ -148,3 +141,5 @@ $(formSubmitCat).on("click", function (event) {
 });
 
 cocktailList.addEventListener("click", displayDrinkDetails);
+
+lastDrinkNameEl.addEventListener("click", displayDrinkDetails);
